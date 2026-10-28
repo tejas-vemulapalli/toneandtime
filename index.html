@@ -194,7 +194,6 @@
                 <!-- Tuning Tolerance / Target Strictness -->
                 <div class="bg-te-card p-3.5 rounded-xl border border-te-border flex flex-col justify-between">
                     <label class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2 flex items-center justify-between">
-                        <span>Green Smile Window</span>
                         <i class="fa-solid fa-bullseye text-emerald-500"></i>
                     </label>
                     <select id="tolerance-select" onchange="updateTunerSettings()" class="bg-te-panel border border-te-border rounded-lg p-2 text-sm font-semibold text-slate-200 focus:outline-none focus:border-emerald-500">
@@ -772,9 +771,9 @@
 
             const concertSub = document.getElementById('concert-note-sub');
             if (transpositionShift !== 0) {
-                concertSub.textContent = `Concert Pitch: ${concertNoteName}`;
+                concertSub.textContent = ` : ${concertNoteName}`;
             } else {
-                concertSub.textContent = `Concert Pitch`;
+                concertSub.textContent = ``;
             }
 
             updateSmileyAndGauge(cents);
