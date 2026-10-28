@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TE Tuner & Metronome Suite</title>
+    <title>TnT Tuner & Metronome Suite</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -80,9 +80,9 @@
     <header class="h-14 bg-te-card border-b border-te-border px-4 flex items-center justify-between shrink-0">
         <div class="flex items-center space-x-3">
             <div class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-500 flex items-center justify-center text-emerald-400 font-digital font-bold text-lg">
-                TE
+                TnT
             </div>
-            <h1 class="font-bold text-lg tracking-wide hidden sm:block">TonalEnergy <span class="text-xs text-emerald-500 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30">PRO</span></h1>
+            <h1 class="font-bold text-lg tracking-wide hidden sm:block">Tone and Time <span class="text-xs text-emerald-500 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-500/30">PRO</span></h1>
         </div>
 
         <!-- MODE TABS -->
@@ -146,7 +146,7 @@
                     <!-- Outer Needle Arc Canvas -->
                     <canvas id="tuner-gauge-canvas" class="w-full h-full absolute inset-0"></canvas>
                     
-                    <!-- TE Smiley Target Center -->
+                    <!-- TnT Smiley Target Center -->
                     <div id="smiley-container" class="w-36 h-36 sm:w-44 sm:h-44 rounded-full border-4 border-slate-700 bg-te-panel flex flex-col items-center justify-center relative transition-all duration-200 z-10 shadow-2xl">
                         <!-- Smiley Face SVG -->
                         <svg id="smiley-svg" class="w-20 h-20 sm:w-24 sm:h-24 transition-colors duration-200 text-slate-500 fill-current" viewBox="0 0 100 100">
@@ -443,7 +443,7 @@
             <span id="footer-status-text">Microphone access required. Click "Enable Mic" above or tap anywhere to prompt.</span>
         </div>
         <div class="font-mono">
-            <span>TE Tuner Suite</span>
+            <span>TnT Tuner Suite</span>
         </div>
     </footer>
 
@@ -800,7 +800,7 @@
             document.getElementById('tuner-tolerance-display').textContent = `±${tuningTolerance}c`;
         }
 
-        // TonalEnergy Smile / Target Gauge Dynamics with customizable tolerance
+        // Tone and Time Smile / Target Gauge Dynamics with customizable tolerance
         function updateSmileyAndGauge(cents, isSilent = false) {
             const container = document.getElementById('smiley-container');
             const mouth = document.getElementById('mouth-path');
